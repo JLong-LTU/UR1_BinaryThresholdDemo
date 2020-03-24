@@ -64,7 +64,7 @@ namespace BinaryThresholdDemo
         {
             Invoke(new Action(() =>
             {
-                pictureBox.Image = frame.Bitmap;
+                pictureBox.Image = frame.Clone().Bitmap;
             }));
             Thread.Sleep(50);
         }
